@@ -1,0 +1,32 @@
+A Skywars Minecraft bukkit plugin
+Customisations:
+    - Map editing commands:
+            /skywars map create <field name> | Creates a new FieldBuilder object or overwrite an existing one
+            /skywars map adminwarp | Sets the admin warp of the current FieldBuilder object
+            /skywars map bind | Sets boundaries vertices for map catching
+            /skywars map addspawn | Adds a spawn into the current FieldBuilder object, the current location will be taken
+            /skywars map build | Confirms the FieldBuilder object configurations
+            /skywars map cancel | Cancels and destroyes the current FieldBuilder
+            /skywars map remove <field name> | Removes an existing map
+            |--------------------------------------------|
+            /skywars addtier <tier name> <probability> | Registers a new tier
+            /skywars additem <tier name> | Registers a new item in the specified tier
+            /skywars savetiers | Save tiers configurations
+            |--------------------------------------------|
+            /skywars newjoin <name> <trigger material> | Creates a new join point
+            /skywars setspawn | Sets the spawn location
+            /skywars reload | It stops all games and reload configurations
+  - In-game commands:
+    lobby:
+      description: Teleports to the lobby spawn location
+      usage: /lobby
+    leave:
+      description: Leaves the current game
+      usage: /leave
+    lsgames:
+      description: Lists all the running games, alias of /match list
+      usage: /lsgames
+    broadcast:
+      description: Allows to use the global chat during a match
+      usage: /broadcast <message>
+      aliases: [bc]

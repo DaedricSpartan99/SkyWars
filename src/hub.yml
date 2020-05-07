@@ -1,0 +1,28 @@
+spawn:
+  ==: tk.icedev.heavenEncounter.utils.blocks.RawLocation
+  yaw: 0.0
+  vector:
+    ==: Vector
+    x: 0.0
+    y: 64.0
+    z: 0.0
+  pitch: 0.0
+  world: world
+compass:
+  ==: org.bukkit.inventory.ItemStack
+  type: COMPASS
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §4Partite in corso
+    lore:
+    - '...'
+board:
+  title: '  &5PROFILO &l&c%player%'
+  kills: '&2@ &3Uccisioni: &a%d'
+  deaths: '&2@ &3Morti: &c%d'
+  played: '&2@ &3Partite giocate: &a%d'
+  wins: '&2@ &3Vittorie: &a%d'
+  coins_p: '&2@ &3Soldi: &a%f'
+  coins_n: '&2@ &3Soldi: &c&m%f'
+joins: {}

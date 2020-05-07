@@ -1,0 +1,25 @@
+title: '&9Partite in corso'
+size: 27
+statusItems:
+  open:
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 5
+  starting:
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 4
+  running:
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 10
+meta:
+  title: '&3SkyWars | &f%d'
+  lore:
+    map: 'Mappa: &6%s'
+    status: 'Status: %s'
+    lobby: 'Giocatori: &b%d / &3%d'
+  statusSignal:
+    open: '&aIn attesa di giocatori'
+    starting: '&6Sta iniziando...'
+    running: '&cIn corso...'

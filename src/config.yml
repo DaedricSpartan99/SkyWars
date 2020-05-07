@@ -1,0 +1,54 @@
+game:
+  empty_world: skyworld
+  mapsDistance: 5000
+  min_players: 2
+  initMapNumber: 5
+  commandsInGame:
+  - 'global'
+  - 'g'
+  - 'gamemode'
+  - 'gm'
+  boardTitle:
+  - 'Skywars'
+  mapBoard:
+    players: '&7&lGiocatori: &b%d / &3%d'
+    map: '&7&lMappa: &e%s'
+    status: '&7&lStato: %s'
+    server: '&cmc.templateserver.it'
+    statusMap:
+      open: '&aIn attesa...'
+      starting: '&6Sta iniziando!'
+      running: '&cIn corso...'
+  gameBoard:
+    skywars_board_user:
+      ==: tk.icedev.heavenEncounter.game.boards.PlayerBoardFormat
+      alive: '&8[&a✔&8] &7%player%'
+      dead: '&8[&c✗&8] &c&m%player%'
+    skywars_board_vip:
+      ==: tk.icedev.heavenEncounter.game.boards.PlayerBoardFormat
+      alive: '&aVIP &7%player%'
+      dead: '&8VIP &c&m%player%'
+    skywars_board_builder:
+      ==: tk.icedev.heavenEncounter.game.boards.PlayerBoardFormat
+      alive: '&eBUILDER &7%player%'
+      dead: '&8BUILDER &c&m%player%'
+    skywars_board_admin:
+      ==: tk.icedev.heavenEncounter.game.boards.PlayerBoardFormat
+      alive: '&bADMIN &7%player%'
+      dead: '&8ADMIN &c&m%player%'
+    skywars_board_founder:
+      ==: tk.icedev.heavenEncounter.game.boards.PlayerBoardFormat
+      alive: '&4FOUNDER &7%player%'
+      dead: '&8FOUNDER &c&m%player%'
+  maps_distance: 5000
+chat:
+  hub:
+    skywars_chat_user: '[&a%f&f$] &6%player%&4>&f %s'
+    skywars_chat_founder: '[&a%f&f$] &6%player%&4>&f &4%s'
+  game:
+    skywars_chat_user: '[&a%f&f$] &6%player%&4>&f %s'
+    skywars_chat_founder: '[&a%f&f$] &6%player%&4>&f &4%s'
+  global:
+    skywars_chat_user: '&a[GLOBALE] [&a%f&f$] &6%player%&4>&7 %s'
+    skywars_chat_founder: '&a[GLOBALE] [&a%f&f$] &6%player%&4>&7 &4%s'
+fields:
